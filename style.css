@@ -5,6 +5,81 @@
 * {
     margin: 0;
     padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.hamburguer {
+    width: 2em;
+    height: 2em;
+    position: fixed;
+    z-index: 100;
+    right: 2rem;
+    top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    cursor: pointer;
+    transition: all .40s;
+}
+
+.hamburguer:hover {
+    transform: translateY(-0.25em);
+}
+
+.show-menu .hamburguer {
+    right: 16em;
+}
+
+.line {
+    width: 100%;
+    height: .2rem;
+    background-color: white;
+    box-shadow: 0.1rem 0.1rem 1px black;
+    transition: transform 1s;
+}
+
+.show-menu #line1 {
+    transform: rotate(45deg) translate(.3rem, .45rem);
+}
+
+.show-menu #line2 {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.show-menu #line3 {
+    transform: rotate(-45deg) translate(.3rem, -.45rem);
+    box-shadow: none;
+}
+
+.hamburguer span {
+    position: absolute;
+    color: white;
+    background: #2C3E50;
+    background: -webkit-linear-gradient(to right, #4CA1AF, #2C3E50);
+    background: linear-gradient(to left, #4CA1AF, #2C3E50); 
+    left: 3em;
+    height: 2em;
+    width: 6em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+
+.hamburguer span::before{
+    content: "";
+    position: absolute;
+    border-right:.5em solid #2C3E50 ;
+    border-top:.5em solid transparent ;
+    border-left:.5em solid transparent ;
+    border-bottom:.5em solid transparent ;
+    left: -1rem;
+}
+
+.show-menu .hamburguer:hover span {
+    opacity: 1;
 }
 
 header {
@@ -38,11 +113,13 @@ header {
     }
 }
 
+
 .banner {
     width: 35%;
     position: absolute;
     top: 35%;
     left: 7%;
+    
 }
 
 .banner h1 {
@@ -51,9 +128,8 @@ header {
     font-family: "Cousine", serif;
     font-weight: 700;
     text-shadow: .1em .2em 2px rgba(0,0,0,0.4);
-    margin-bottom: .8em;
-    opacity: 0;
-    animation: moveBanner 1.5s forwards;
+    margin-bottom: 1em;
+    transition: 0.30s;
 }
 
 .banner p {
@@ -61,42 +137,102 @@ header {
     color: white;
     font-size: 3em;
     text-shadow: .1em .2em 2px rgba(0,0,0,0.4);
-    margin-bottom: 1.2em;
-    opacity: 0;
-    animation: moveBanner 1.5s forwards;
+    margin-bottom: 1em;
+    transition: 0.30s;
 }
 
 .banner button {
     font-family: 'Itim', serif;
     font-size: 1em;
     text-transform: uppercase;
-    color: white;
+    color: #ffffff;
     letter-spacing: .2em;
-    background: #2C3E50;
-    background: -webkit-linear-gradient(to right, #4CA1AF, #2C3E50);
-    background: linear-gradient(to left, #4CA1AF, #2C3E50);    
+    background-color: rgba(255, 255, 255, 0);
     padding: 1em 3em;
-    border: 0;
+    border: 2px solid white;
     border-radius: 5px;
-    box-shadow: .1em .2em 2px rgba(0,0,0,0.4);
+    text-shadow: .1em .2em 2px rgba(0,0,0,0.4);
     cursor: pointer;
     transition: 0.30s;
-    opacity: 0;
-    animation: moveBanner 1.5s forwards;
 }
 
 .banner button:hover, button:focus {
-    text-shadow: .1em .2em 2px rgba(0,0,0,0.4);;
-    box-shadow: 0 0.5em 0.5em -0.4em #437ba0;
+    background: #2C3E50;
+    background: -webkit-linear-gradient(to right, #4CA1AF, #2C3E50);
+    background: linear-gradient(to left, #4CA1AF, #2C3E50); 
+    box-shadow: 0 0.7em 0.7em -0.4em #02020277;
+    border: 0;
     transform: translateY(-0.25em);
 }
 
-@keyframes moveBanner{
-    0%{
-        transform: translateY(10rem) rotateY(-30deg);
-    }
-    100%{
-        transform: translateY(0 rotateY(0));
-        opacity: 1;
-    }
+.banner h1:hover, p:hover{
+    transform: translateY(-0.15em);
+}
+
+.sidebar {
+    width: 20rem;
+    height: 100vh;
+    background-color: #000000ad;
+    position: fixed;
+    top: 0;
+    right: -20rem;
+    transition: all .40s;
+}
+
+.show-menu .sidebar{
+    right: 0;
+}
+
+.menu {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.menu-item {
+    text-align: center;
+    margin-bottom: .6rem;
+    transition: 0.30s;
+    
+}
+
+.menu-link {
+    font-family: 'Nunito Sans', serif;
+    font-weight: 600;
+    font-size: 2em;
+    color: rgb(255, 255, 255);
+    transition: color .3s;
+}
+
+.menu-item:hover {
+    transform: translateY(-0.25em);
+}
+
+.menu-link:hover {
+    opacity: 0.3;
+}
+    
+.social-media {
+    position: absolute;
+    bottom: 2em;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.social-media i {
+    color: white;
+    height: 2.5em;
+    width: .8em;
+    font-size: 2.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.30s;
+}
+
+.social-media i:hover {
+    transform: translateY(-0.1em);
+    opacity: 0.3;
 }
