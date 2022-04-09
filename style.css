@@ -135,9 +135,9 @@ header {
 .banner p {
     font-family: "josefin Slab", serif;
     color: white;
-    font-size: 5vh;
-    text-shadow: .1em .2em 2px rgba(0,0,0,0.4);
-    margin-bottom: 1em;
+    font-size: 7vh;
+    text-shadow: .1em .15em 2px rgba(0,0,0,0.4);
+    margin-bottom: .7em;
     transition: 0.30s;
 }
 
