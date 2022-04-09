@@ -215,7 +215,7 @@ header {
     
 .social-media {
     position: absolute;
-    bottom: 10vh;
+    bottom: 12vh;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
