@@ -123,21 +123,25 @@ header {
     left: 4%;
     display: flex;
     align-items: center;
+
 }
 
 @media (max-width: 600px){
     .banner{
-        width: 100%;
-        top: 9%;
-        left: 0;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
+        width: 90%;
+        top: 15%;
+        left: 0%;
+        justify-content: center;
+        flex-wrap: wrap;
     }
 
     .banner .text {
         max-width: 300px;
-        margin-left: 0;
+        margin-top: 20px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        flex-wrap: wrap;
     }
 }
 
@@ -145,30 +149,37 @@ header {
     margin-left: 40px;
 }
 
+.banner .matheus{
+    margin-left: 40px;
+    
+}
+
 .banner .matheus img {
     width: 15rem;
     border-radius: 50%;
+    border: 2px solid #ffffff83;
     background: #2C3E50;
     background: -webkit-linear-gradient(to right, #4CA1AF, #2C3E50);
     background: linear-gradient(to left, #4CA1AF, #2C3E50);    
     margin: auto;
+    box-shadow: 0 1em 1em -0.4em #03030377;
 }
 
 .banner h1 {
     color: white;
-    font-size: 7vh;
+    font-size: 8vh;
     margin-top: 0;
-    margin-bottom: .4em;
+    
     font-family: "Cousine", serif;
     font-weight: 700;
-    text-shadow: .1em .2em 2px rgba(0,0,0,0.4);
+    text-shadow: .1em .15em 2px rgba(0,0,0,0.4);
     transition: 0.30s;
 }
 
 .banner p {
     font-family: "Nunito Sans", serif;
     color: white;
-    font-size: 5vh;
+    font-size: 3vh;
     text-shadow: .1em .15em 2px rgba(0,0,0,0.4);
     margin-bottom: 2.5rem;
     transition: 0.30s;
@@ -179,13 +190,13 @@ header {
     font-size: 2vh;
     text-transform: uppercase;
     color: #ffffff;
-    letter-spacing: .4vh;
+    border: 2px solid #ffffff83;
+    letter-spacing: .3vh;
     background: #2C3E50;
     background: -webkit-linear-gradient(to right, #4CA1AF, #2C3E50);
     background: linear-gradient(to left, #4CA1AF, #2C3E50); 
-    padding: 2vh 6vh;
+    padding: 1.5vh 4vh;
     border-radius: 5px;
-    border: 0;
     box-shadow: 0 0.7em 0.7em -0.4em #02020277;
     text-shadow: .1em .2em 2px rgba(0,0,0,0.4);
     cursor: pointer;
@@ -195,18 +206,22 @@ header {
 .banner button:hover, button:focus {
     background: #ffffff00;
     border: 2px solid white;
-    
+    box-shadow: 0 0.4em 0.4em -0.4em #ffffff56;
     transform: translateY(-0.25em);
 }
 
-.banner h1:hover, .banner p:hover{
+.banner h1:hover {
+    transform: translateY(-0.1em);
+}
+
+.banner p:hover{
     transform: translateY(-0.15em);
 }
 
 .sidebar {
     width: 20rem;
     height: 100vh;
-    background-color: #000000d2;
+    background-color: #000000ea;
     position: fixed;
     top: 0;
     right: -20rem;
