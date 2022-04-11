@@ -167,13 +167,13 @@ header {
 
 .banner h1 {
     color: white;
-    font-size: 250%;
-    margin-top: 0;
-    
+    font-size: 200%;
+    margin-bottom: 1rem;
     font-family: "Cousine", serif;
-    font-weight: 700;
+    font-weight: 400;
     text-shadow: .1em .15em 2px rgba(0,0,0,0.4);
     transition: 0.30s;
+    border-bottom: 1px solid #ffff;
 }
 
 .banner h2 {
@@ -181,18 +181,19 @@ header {
     font-weight: 100;
     letter-spacing: .3rem;
     color: white;
-    font-size: 100%;
+    font-size: 110%;
     text-shadow: .1em .15em 2px rgba(0,0,0,0.4);
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
     transition: 0.30s;
+    
 }
 
 .banner p {
     font-family: "Sahitya", serif;
     color: white;
-    font-size: 120%;
+    font-size: 100%;
     text-shadow: .1em .15em 2px rgba(0,0,0,0.4);
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
     transition: 0.30s;
 }
 
@@ -201,7 +202,7 @@ header {
     font-size: 100%;
     text-transform: uppercase;
     color: #ffffff;
-    border: 2px solid #ffffff83;
+    border: 1px solid #ffffff83;
     letter-spacing: .3vh;
     background: #2C3E50;
     background: -webkit-linear-gradient(to right, #4CA1AF, #2C3E50);
@@ -209,7 +210,7 @@ header {
     padding: 1vh 3vh;
     border-radius: 5px;
     box-shadow: 0 0.7em 0.7em -0.4em #02020277;
-    text-shadow: .1em .2em 2px rgba(0,0,0,0.4);
+    text-shadow: .1em .15em 2px #000000d7;
     cursor: pointer;
     transition: 0.30s;
 }
