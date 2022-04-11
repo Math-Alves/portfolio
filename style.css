@@ -118,7 +118,7 @@ header {
 
 .banner {
     position: absolute;
-    top: 35%;
+    top: 30%;
     width: 60%;
     display: flex;
     align-items: center;
@@ -145,12 +145,12 @@ header {
 }
 
 .banner .text {
-    width: 70%;
+    width: 60%;
     margin: 2%;
 }
 
 .banner .matheus {
-    width: 30%;
+    width: 25%;
     margin: 3%;
 }
 
