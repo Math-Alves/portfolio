@@ -237,6 +237,7 @@ header {
 .sidebar {
     width: 20rem;
     height: 100vh;
+    z-index: 99;
     background-color: #000000ea;
     position: fixed;
     top: 0;
@@ -369,7 +370,7 @@ header {
 }
 
 .sessao-conhecimentos {
-    background-color: #cfcfcf;
+    background-color: #dadada;
     padding: 40px;
 }
 
@@ -514,4 +515,45 @@ header {
 
 .card:hover .card-img img{
     opacity: .2;
+}
+
+.sessao-contatos{
+    background-color: #dadada;
+    padding: 2rem;
+}
+
+.contatos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 300px;
+}
+
+.contatos i {
+    font-size: 2rem;
+    padding: 1rem;
+    letter-spacing: .3rem;
+    color: #2C3E50;
+}
+
+.contatos .itens-cont {
+    display: flex;
+    align-items: center;
+}
+
+.contatos .itens-cont p {
+    font-size: 1.5rem;
+}
+
+.rodape {
+    height: 8vh;
+    min-width: 300px;
+    background-color: #2C3E50;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:#3cf8ef ;
+    text-align: center;
+    font-size: .8rem;
 }
