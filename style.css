@@ -189,9 +189,11 @@ header {
 }
 
 .banner p {
-    font-family: "Sahitya", serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, 'Arial Narrow', Arial, sans-serif;
     color: white;
-    font-size: 100%;
+    
+    letter-spacing: .1rem;
+    font-size: 110%;
     text-shadow: .1em .15em 2px rgba(0,0,0,0.4);
     margin-bottom: 2rem;
     transition: 0.30s;
@@ -204,9 +206,7 @@ header {
     color: #ffffff;
     border: 1px solid #ffffff83;
     letter-spacing: .3vh;
-    background: #2C3E50;
-    background: -webkit-linear-gradient(to right, #4CA1AF, #2C3E50);
-    background: linear-gradient(to left, #4CA1AF, #2C3E50); 
+    background: #ffffff00;
     padding: 1vh 3vh;
     border-radius: 5px;
     box-shadow: 0 0.7em 0.7em -0.4em #02020277;
